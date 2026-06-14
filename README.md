@@ -16,3 +16,16 @@ some others.
 Anyway, this is GPLv3 licensed, and ought to be of *some* utility. 
 
 Contributions welcomed. 
+
+## Renders
+
+Rendered assets in common sizes are in the `./assets` folder. If you're
+just looking for (eg) a 1/2" pipe clamp, no need to compile your own. 
+There's probably one already in there. Sometimes they will be named by 
+their technical names (eg DN15). I had to learn them, so it made sense to me 
+to use them as the appropriate shorthand. 
+
+A good way to learn them yourself would be to look at the filenames and 
+create a README in that folder that explains which DN value maps to which 
+common sizes.
+
