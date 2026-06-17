@@ -22,7 +22,7 @@ show_label = true; // [true:Show, false:Hide]
 label_text = "";
 
 /* [Preview] */
-show_pipe = false; // [true:Show, false:Hide]
+// show_pipe = false; // [true:Show, false:Hide]
 
 /* [Hidden] */
 LINE_W  = 0.42;
@@ -123,8 +123,8 @@ module snap_mount_raw() {
 }
 
 module snap_mount() {
-    translate([0, mount_height, 0])
-        rotate([90, 0, 0])
+    translate([0, 0, 0])
+        rotate([0, 0, 0])
             snap_mount_raw();
 }
 

@@ -17,7 +17,7 @@ tab_corner_r = 3.0; // [0.0:0.5:20.0]
 wall_layers = 0; // [0:Auto, 5:5 layers, 6:6 layers, 7:7 layers, 8:8 layers, 9:9 layers, 10:10 layers]
 
 /* [Preview] */
-show_pipe = false; // [true:Show, false:Hide]
+// show_pipe = false; // [true:Show, false:Hide]
 
 /* [Hidden] */
 LINE_W   = 0.42;
@@ -94,7 +94,7 @@ module u_clamp_raw() {
         }
 
         for (xc = [-(or + tl / 2), (or + tl / 2)])
-            translate([xc, wt / 2, sw / 2])
+            translate([xc, wt/2, sw/2])
                 rotate([90, 0, 0])
                     cylinder(
                         d      = hole_d,
@@ -106,15 +106,15 @@ module u_clamp_raw() {
 }
 
 module u_clamp() {
-    translate([0, sw, 0])
-        rotate([90, 0, 0])
+    translate([0, 0, 0])
+        rotate([0, 0, 0])
             u_clamp_raw();
 }
 
 module pipe_preview() {
     color("SteelBlue", 0.28)
         translate([0, sw / 2, sd])
-            rotate([90, 0, 0])
+            rotate([0, 0, 0])
                 cylinder(
                     d      = pipe_od,
                     h      = sw * 2,
